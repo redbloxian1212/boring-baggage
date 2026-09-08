@@ -18,7 +18,7 @@ return ByteNet.defineNamespace("Game", function()
 			value = ByteNet.uint8,
 		}),
 
-		adjustSpawnRate = ByteNet.definePacket({
+		setSpawnRate = ByteNet.definePacket({
 			value = Bytenet.uint8,
 		}),
 	}
