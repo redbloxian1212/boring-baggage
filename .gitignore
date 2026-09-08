@@ -1,0 +1,16 @@
+# Project place file
+/Forge Framework v2.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+sourcemap.json
+
+# Packages
+Packages
+ServerPackages
+
+# Dev stuff
+TODO.txt
+.vscodeclear

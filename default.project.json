@@ -1,0 +1,35 @@
+{
+  "name": "Forge Framework v2",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Forge": {
+        "$className": "Folder",
+        "Shared": {
+          "$path": "src/shared"
+        },
+        "Client": {
+          "$path": "src/client"
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Forge": {
+        "$path": "src/server"
+      },
+      "Packages": {
+        "$path": "ServerPackages"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Forge": {
+          "$path": "src/StarterPlayer"
+        }
+      }
+    }
+  }
+}
