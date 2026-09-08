@@ -17,5 +17,9 @@ return ByteNet.defineNamespace("Game", function()
 		removeBaggage = Bytenet.definePacket({
 			value = ByteNet.uint8,
 		}),
+
+		adjustSpawnRate = ByteNet.definePacket({
+			value = Bytenet.uint8,
+		}),
 	}
 end)
