@@ -6,12 +6,12 @@ local ByteNet = require(game:GetService("ReplicatedStorage").Packages.Bytenet)
 
 return ByteNet.defineNamespace("Game", function()
 	return {
-		spawnBaggage = ByteNet.struct({
-			value = {
+		spawnBaggage = ByteNet.definePacket({
+			value = Bytenet.struct({
 				id = ByteNet.uint8,
-				color = ByteNet.uint8,
-				material = ByteNet.uint8,
-			},
+				colorId = ByteNet.uint8,
+				materialId = ByteNet.uint8,
+			}),
 		}),
 
 		removeBaggage = Bytenet.definePacket({
