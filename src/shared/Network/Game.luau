@@ -14,6 +14,10 @@ return ByteNet.defineNamespace("Game", function()
 			}),
 		}),
 
+		viewBaggage = ByteNet.definePacket({
+			value = ByteNet.uint8,
+		}),
+
 		setSpawnRate = ByteNet.definePacket({
 			value = Bytenet.uint8,
 		}),
