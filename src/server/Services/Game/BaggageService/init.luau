@@ -54,11 +54,19 @@ end
 
 function BaggageService.Start(self: BaggageService)
 	Observers.observePlayer(function(player)
-		self._admin = player
-		return function() end
+		if not self._admin then
+			self._admin = player
+		end
+
+		return function()
+			self._admin = nil
+		end
 	end)
 
 	GameNet.setSpawnRate.listen(function(data: number, player: Player?)
+		if self._admin ~= player then
+			return
+		end
 		self._bagsPerSecond = math.clamp(data, 1, ConveyorConfig.MaxSpawnRate)
 	end)
 
